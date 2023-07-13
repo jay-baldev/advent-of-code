@@ -1,3 +1,4 @@
+# Part 1
 input_file = open('calorie_counting_input', 'r')
 inputs = input_file.readlines()
 
@@ -29,9 +30,17 @@ for input_list in final_input:
 
 output_list.sort()
 
-print(final_input)
-print(len(final_input))
-print(len(inputs))
-print(output_list)
-print(len(output_list))
+# print(final_input)
+# print(len(final_input))
+# print(len(inputs))
+# print(output_list)
+# print(len(output_list))
 print(output_list[-1])
+
+# Part 2
+
+top_three = output_list[-3:]
+sum = 0
+for calories in top_three:
+    sum += calories
+print(sum)
